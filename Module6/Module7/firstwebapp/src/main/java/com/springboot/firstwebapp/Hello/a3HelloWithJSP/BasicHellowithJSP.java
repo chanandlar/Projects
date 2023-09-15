@@ -1,11 +1,10 @@
-package com.springboot.firstwebapp.Hello;
+package com.springboot.firstwebapp.Hello.a3HelloWithJSP;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
-public class a3BasicHellowithJSP {
+public class BasicHellowithJSP {
     @RequestMapping("say-hello-jsp")
     public String sayHellowithjsp(){
         return "sayHello";

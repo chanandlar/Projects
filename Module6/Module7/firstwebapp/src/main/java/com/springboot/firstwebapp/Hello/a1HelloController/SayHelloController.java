@@ -1,11 +1,11 @@
-package com.springboot.firstwebapp.Hello;
+package com.springboot.firstwebapp.Hello.a1HelloController;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
-public class a1SayHelloController {
+public class SayHelloController {
     //sayHello->Hello what are you learning today
     @RequestMapping("say-hello")
     @ResponseBody

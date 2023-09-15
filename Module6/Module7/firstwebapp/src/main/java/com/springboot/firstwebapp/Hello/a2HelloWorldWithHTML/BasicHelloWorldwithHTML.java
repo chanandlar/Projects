@@ -1,11 +1,11 @@
-package com.springboot.firstwebapp.Hello;
+package com.springboot.firstwebapp.Hello.a2HelloWorldWithHTML;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
-public class a2BasicHelloWorldwithHTML {
+public class BasicHelloWorldwithHTML {
     @RequestMapping("say-hello-html")
     @ResponseBody
     public String sayHelloHtml() {

@@ -1,16 +1,13 @@
-package com.springboot.firstwebapp.Hello;
+package com.springboot.firstwebapp.Hello.a4Login;
 
-import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import org.slf4j.Logger;
-
 
 @Controller
-public class a4LoginControlller {
+public class LoginControlller {
     //private Logger logger= LoggerFactory.getLogger(getClass());
     //http://localhost
     @RequestMapping("login")
