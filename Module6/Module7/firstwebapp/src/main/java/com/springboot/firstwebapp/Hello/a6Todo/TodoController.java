@@ -1,7 +1,9 @@
 package com.springboot.firstwebapp.Hello.a6Todo;
 
+import jakarta.validation.Valid;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -27,15 +29,32 @@ public class TodoController {
         return "ListTodos";
     }
 
+    @RequestMapping("delete-todo")
+    public String deleteTodo(@RequestParam int id){
+        todoService.deletebyId(id);
+        return "redirect:list-todos";
+    }
+
+    @RequestMapping("update-todo")
+    public String updateTodo(@RequestParam int id){
+        todoService.deletebyId(id);
+        return "redirect:list-todos";
+    }
+
     @RequestMapping(value = "add-todo",method = RequestMethod.GET)
     public String showNewTodoPage(ModelMap model){
+        Todo todo=new Todo(0,(String)model.get("name"),"",LocalDate.now().plusYears(1),false);
+        model.put("todo",todo);
         return "Todo";
     }
 
     @RequestMapping(value = "add-todo",method = RequestMethod.POST)
-    public String addNewTodo(@RequestParam String Description,ModelMap model){
+    public String addNewTodo(ModelMap model, @Valid Todo todo, BindingResult result){
+        if(result.hasErrors()){
+            return "Todo";
+        }
         String username=(String) model.get("name");
-        todoService.addTodo(username, Description,LocalDate.now().plusYears(1),false);
+        todoService.addTodo(username, todo.getDescription(),LocalDate.now().plusYears(1),false);
         return "redirect:list-todos";
     }
 }
