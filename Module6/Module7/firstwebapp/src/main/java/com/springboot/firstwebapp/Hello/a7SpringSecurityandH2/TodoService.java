@@ -1,4 +1,4 @@
-package com.springboot.firstwebapp.Hello.a6Todo;
+package com.springboot.firstwebapp.Hello.a7SpringSecurityandH2;
 
 import jakarta.validation.Valid;
 import org.springframework.stereotype.Service;
@@ -27,19 +27,19 @@ public class TodoService {
         todos.add(todo);
     }
 
-    public void deletebyId(int id){
-        Predicate<? super Todo> predicate =todo -> todo.getId()==id;
+    public void deleteById(int id){
+        Predicate<? super Todo> predicate = todo -> todo.getId()==id;
         todos.removeIf(predicate);
     }
 
     public Todo findById(int id) {
-        Predicate<? super Todo> predicate =todo -> todo.getId()==id;
+        Predicate<? super Todo> predicate = todo -> todo.getId()==id;
         Todo todo=todos.stream().filter(predicate).findFirst().get();
         return todo;
     }
 
     public void updateTodo(@Valid Todo todo) {
-        deletebyId(todo.getId());
+        deleteById(todo.getId());
         todos.add(todo);
     }
 }

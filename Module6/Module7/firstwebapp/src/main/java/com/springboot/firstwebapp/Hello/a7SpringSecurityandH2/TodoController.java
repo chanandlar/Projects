@@ -1,4 +1,5 @@
-package com.springboot.firstwebapp.Hello.a6Todo;
+package com.springboot.firstwebapp.Hello.a7SpringSecurityandH2;
+
 
 import jakarta.validation.Valid;
 import org.springframework.stereotype.Controller;
@@ -9,7 +10,6 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.SessionAttributes;
 
-import java.lang.reflect.Method;
 import java.time.LocalDate;
 import java.util.List;
 
@@ -24,14 +24,15 @@ public class TodoController {
 
     @RequestMapping("list-todos")
     public String listAllTodos(ModelMap model){
-        List<Todo> todos=todoService.findByUsername("Shoeb");
+        String username=(String) model.get("name");
+        List<Todo> todos=todoService.findByUsername(username);
         model.addAttribute("todos",todos);
         return "ListTodos";
     }
 
     @RequestMapping("delete-todo")
     public String deleteTodo(@RequestParam int id){
-        todoService.deletebyId(id);
+        todoService.deleteById(id);
         return "redirect:list-todos";
     }
 
