@@ -1,6 +1,8 @@
 package com.example.rest.webservices.a4RestAPI;
 
 
+import com.example.rest.webservices.a4RestAPI.ExceptionHandling.UserNotFoundException;
+import jakarta.validation.Valid;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
@@ -24,12 +26,19 @@ public class UserResource {
     @GetMapping(path = "/users/{id}")
     public User retrieveUser(@PathVariable int id){
         User user=service.findById(id);
-
+        if(user==null){
+            throw new UserNotFoundException("id:"+id);
+        }
         return user;
     }
 
+    @DeleteMapping(path = "/users/{id}")
+    public void deleteUser(@PathVariable int id){
+        service.deleteById(id);
+    }
+
     @PostMapping(path = "/users")
-    public ResponseEntity<User> createUser(@RequestBody User user){
+    public ResponseEntity<User> createUser(@Valid @RequestBody User user){
         User savedUser=service.save(user);
 
         URI location= ServletUriComponentsBuilder.
