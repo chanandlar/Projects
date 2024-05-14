@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="037b19d4-dd12-47aa-a993-bc3f1a146a46" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../Async/CompletableFuture/Junit/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Async/CompletableFuture/Junit/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Async/CompletableFuture/Junit/src/main/resources/META-INF/maven/archetype.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Async/CompletableFuture/Junit/src/main/resources/archetype-resources/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Async/CompletableFuture/Junit/src/main/resources/archetype-resources/src/main/java/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Async/CompletableFuture/Junit/src/main/resources/archetype-resources/src/test/java/AppTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module6/Module10/frontend/todo-app/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Module6/Module10/frontend/todo-app/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module6/Module10/frontend/todo-app/src/Components/Counter/Counter.css" beforeDir="false" afterPath="$PROJECT_DIR$/../Module6/Module10/frontend/todo-app/src/Components/Counter/Counter.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module6/Module10/frontend/todo-app/src/Components/Counter/Counter.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../Module6/Module10/frontend/todo-app/src/Components/Counter/Counter.jsx" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 6
+}]]></component>
+  <component name="ProjectId" id="2XCiaEchluF6zHuNYxmlF8xxPTL" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "/home/sakhan/Desktop/spring/Projects/Junit"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="037b19d4-dd12-47aa-a993-bc3f1a146a46" name="Changes" comment="" />
+      <created>1698139523717</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1698139523717</updated>
+    </task>
+    <servers />
+  </component>
+</project>

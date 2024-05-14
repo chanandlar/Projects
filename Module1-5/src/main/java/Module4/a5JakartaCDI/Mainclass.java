@@ -15,7 +15,7 @@ class BusinessService{
         return dataService;
     }
     //@Inject
-    @Autowired
+    //@Autowired
     public void setDataService(DataService dataService) {
         this.dataService = dataService;
     }
