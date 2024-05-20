@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Async/CompletableFuture/Junit/Junit-Testing/junit-5-basics-course" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Async/CompletableFuture/completablefuture-demo" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Java-Reactive-Programming/reactive-java-workshop" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Junit/junit-5-basics-course" vcs="Git" />
+  </component>
+</project>

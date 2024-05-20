@@ -1,6 +1,6 @@
 package Module4.a3BeanScopes;
 
-import org.springframework.beans.factory.annotation.Configurable;
+
 import org.springframework.beans.factory.config.ConfigurableBeanFactory;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.annotation.ComponentScan;
